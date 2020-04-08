@@ -40,7 +40,7 @@ truffle migrate --reset
 ```
 Now open Ganache and check if AOE contract is in the state 'Deployed' in your list of contracts. If not, open the settings of your Ganache > Server and edit your port number to 8545. Then try again, the state should be in 'Deployed' for AOE contract.
 
-### Adding a new contract in the project
+### Adding a new contract in the project (follow the logic of AOE contract)
 1- Develop your smart contract and test it quickly on Remix IDE.
 
 2- Paste it on the contracts folder.
@@ -51,7 +51,9 @@ Now open Ganache and check if AOE contract is in the state 'Deployed' in your li
 
 5- Edit the file drizzleOptions.js and add the lines for importing and using your newly added smart contract.
 
-6- Compile your smart contract and deploy it on your Ganache with 'truffle compile && truffle migrate --reset'.
+6- Edit the file MyComponent.js and add the lines for importing and using your newly added smart contract.
+
+7- Compile your smart contract and deploy it on your Ganache with 'truffle compile && truffle migrate --reset'.
 
 ### Launching the UI
 Using Drizzle to build your smart contract UI is pretty simple but requires to proceed in its logic (along with React's logic).
